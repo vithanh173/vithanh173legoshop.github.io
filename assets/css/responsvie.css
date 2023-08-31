@@ -87,6 +87,10 @@
         display: none
     }
 
+    .footer-payment__container{
+        margin-right: 16px;
+    }
+
 }
 
 /*mobile*/
@@ -173,5 +177,9 @@
 
     .footer__container{
         padding: 0 16px;
+    }
+
+    .footer-payment__container{
+        margin-right: 48px;
     }
 }
