@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/grid1.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsvie.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <ul class="header__sort-bar">
+            <li class="header__sort-item header__sort-item--actived">
+                <a href="" class="header__sort-link ">Liên quan</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Mới nhất</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Bán chạy</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Giá</a>
+            </li>
+        </ul>
+
+
+        <input type="checkbox" id="mobile-seach-cb" class="header__search-cb" hidden>
+        
+        <div class="mobile__search-container">
+            <div class="mobile__search">
+                <div class="header__search-input-container">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+
+                    <!--Search history-->
+                    <div class="header__search-history">
+                        <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                        <ul class="header__search-history-list">
+                            <li class="header__search-history-item">
+                                <a href="">Lego xe tăng</a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">Lego máy bay chiến đấu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__search-select">
+                    <span class="header__search-select-label">Trong shop</span>
+                    <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+
+                    <ul class="header__search-option">
+                        <li class="header__search-option-item search-option-item--actived">
+                            <span>Trong shop</span>
+                            <i class="fa-solid fa-check"></i>
+                        </li>
+                        <li class="header__search-option-item ">
+                            <span>Ngoài shop</span>
+                            <i class="fa-solid fa-check"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search-btn">
+                    <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__showQR header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/MyQRCode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/apple.png" alt="Apple Store"
+                                            class="header__download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/googleplay.png" alt="Google Play"
+                                            class="header__download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="#" class="header__navbar_iconlink">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header__navbar_iconlink">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__showNotify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông Báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-heading">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhplxzo6d8e9a7"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-infor">
+                                                <span class="header__notify-name">Đồ chơi Lắp ráp xe phòng không Radar
+                                                    mặt đất, Woma C0811, Xếp hình thông minh, Mô hình quân sự [939 mảnh
+                                                    ghép]</span>
+                                                <span class="header__notify-desc">MÔ TẢ SẢN PHẨM</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/sg-11134201-22090-z56d9755z2hv25"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-infor">
+                                                <span class="header__notify-name">Đồ chơi Lắp ráp Xe Tăng Anh hạng nặng
+                                                    TOG II, Quanguan 100241 British Tank, Xếp hình thông minh, Mô hình
+                                                    xe tăng [2288]</span>
+                                                <span class="header__notify-desc">MÔ TẢ SẢN PHẨM</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/29d634c26354cd67453ad1f47e4843d5"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-infor">
+                                                <span class="header__notify-name">Đồ chơi Lắp ráp USSR World War II KV-2
+                                                    Heavy Panzer Tank - XB-06006 KV-2 Tank - Xếp hình thông minh - Mô
+                                                    hình trí tuệ</span>
+                                                <span class="header__notify-desc">MÔ TẢ SẢN PHẨM</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://down-vn.img.susercontent.com/file/800208be55306c52fe1a37b9fdca91d6"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-infor">
+                                                <span class="header__notify-name">Đồ chơi Lắp ráp Tàu hỏa quân sự, Kazi
+                                                    98252 Xếp hình thông minh, Militay Railway [Có động cơ điện]</span>
+                                                <span class="header__notify-desc">MÔ TẢ SẢN PHẨM</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header_notify-footer">
+                                    <a href="" class="header_notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ Giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng
+                            Ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong ">Đăng Nhập</li> -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/myPhoto.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Vĩ Thành</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item-separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--Header with search-->
+                <div class="header-with-search">
+                    <div class="header__mobile">
+                        <label for="mobile-menu-cb" class="header__mobile-menu">
+                            <i class="header__mobile-icon fa-solid fa-bars"></i>
+                        </label>
+                        <label for="mobile-seach-cb" class="header__mobile-search">
+                            <i class="header__mobile-icon fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    </div>
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="./assets/img/logo_shopee.png" alt="Shopee" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-container">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+
+                            <!--Search history-->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Lego xe tăng</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Lego máy bay chiến đấu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item search-option-item--actived">
+                                    <span>Trong shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item ">
+                                    <span>Ngoài shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-container">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notify">5</span>
+
+                            <!--No cart: header__cart-none-->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no_cart.png" alt="" class="header__cart-none-img">
+                                <p class="header__cart-none-msg">Chưa có sản phẩm</p>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+
+                                    <!--Cart item-->
+                                    <li class="header__cart-item">
+                                        <img src="https://down-vn.img.susercontent.com/file/40f18b80765d89bd1fd6999bb16c7d1b"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-infor">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Đồ chơi Lắp Ráp Xe Tăng Đức
+                                                    Panzerhaubitze 2000, XB06047 Amored Tank Xếp hình thông minh [1346
+                                                    Mảnh ghép]</h5>
+                                                <div class="header__cart-item-price-container">
+                                                    <span class="header__cart-item-price">669.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Thương hiệu: XingBao
+                                                </span>
+                                                <span class="header__cart-item-del">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lg0ov131ueeic8"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-infor">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ xếp hình Trạm Radar phòng không tự
+                                                    hành 1000 chi tiết Woma C0853</h5>
+                                                <div class="header__cart-item-price-container">
+                                                    <span class="header__cart-item-price">259.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Thương hiệu: Woma
+                                                </span>
+                                                <span class="header__cart-item-del">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lij08ogehhjgdf"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-infor">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Đồ chơi Lắp ráp Xe tăng Liên Xô T-34,
+                                                    Quanguan 100063 Medium Tank, Xếp hình thông minh, Mô hình quân sự
+                                                </h5>
+                                                <div class="header__cart-item-price-container">
+                                                    <span class="header__cart-item-price">550.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Thương hiệu: Quanguan
+                                                </span>
+                                                <span class="header__cart-item-del">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://down-vn.img.susercontent.com/file/5a2d9777a443f3b3a7431dc34781e51d"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-infor">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Đồ chơi Lắp ráp Xe Chống Tên lưa
+                                                    HQ-16, Sembo Block 105716 Anti-Aircraft Missle, Xếp hình thông minh,
+                                                    Mô hình Quân sự</h5>
+                                                <div class="header__cart-item-price-container">
+                                                    <span class="header__cart-item-price">369.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Thương hiệu: Sembo Block
+                                                </span>
+                                                <span class="header__cart-item-del">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfzkpwf1olt641"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-infor">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Đồ chơi Lắp ráp USSR World War II
+                                                    KV-2 Heavy Panzer Tank - XB-06006 KV-2 Tank - Xếp hình thông minh -
+                                                    Mô hình trí tuệ</h5>
+                                                <div class="header__cart-item-price-container">
+                                                    <span class="header__cart-item-price">1.890.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Thương hiệu: XingBao
+                                                </span>
+                                                <span class="header__cart-item-del">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a class="header__cart-view btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid wide">
+                <div class="row small-gutter app-container">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--actived">
+                                    <a href="" class="category-item__link">Sản phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Panlos</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Quanguan</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Sluban</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">SY</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Sembo Block</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Woma</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Kazi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">LWCK</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col l-10 m-12 c-12">
+                        <div class="sort-filter hide-on-mobile-tablet">
+                            <span class="sort-filter__label">Sắp xếp theo</span>
+                            <button class="sort-filter__btn btn btn--primary">Phồ biến</button>
+                            <button class="sort-filter__btn btn">Mới nhất</button>
+                            <button class="sort-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sort-filter__page">
+                                <span class="sort-filter__page-num">
+                                    <span class="sort-filter__page-current">1</span>/20
+                                </span>
+
+                                <div class="sort-filter__page-control">
+                                    <a href="" class="sort-filter__page-btn sort-filter__page-btn--disabled">
+                                        <i class="sort-filter__page-icon fa-solid fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="sort-filter__page-btn">
+                                        <i class="sort-filter__page-icon fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        <span class="mobile-category__name">Panlos</span>
+                                    </a>
+                                </li>
+                                 <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">Quanguan</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item"> 
+                                    <a href="" class="mobile-category__link">
+                                        <span class="mobile-category__name">Sluban</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">SY</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">Sembo Block</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                         <span class="mobile-category__name">Woma</span>
+                                        </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">Kazi</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">LWCK</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">Enlighten</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">Gudi</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> 
+                                        <span class="mobile-category__name">Thanh lý hàng tồn kho[giá rẻ]</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="product">
+                            <div class="row small-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/sg-11134201-22110-ioyck8lab9jv12"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Xe Tăng Đức Kingtiger, Panlos
+                                            632016 Xếp hình thông minh, Mô hình quân sự [1974 Mảnh ghép]</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">799.000đ</span>
+                                            <span class="product-item__price-current">660.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 3</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Kazi</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">17%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/40ee420c12ce598d990b12aa4b05228e"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Xe Tăng Đức MTW M113 - Xingbao
+                                            XB06050 German Tank - Xếp hình thông minh - Mô hình trí tuệ</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">599.000đ</span>
+                                            <span class="product-item__price-current">309.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 22</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">XingBao</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">48%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/c6c613ef14860c4a2bd7e406451053fd"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Xe chống tên lưa HQ-12, Sembo
+                                            Block 105717 Anti Air-rocket, Xếp hình thông minh, Mô hình quân sự</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">399.000đ</span>
+                                            <span class="product-item__price-current">359.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 7</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Sembo Block</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">10%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/737a6d10d4839f8ef15755898dd547c7"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi lắp ráp Xe Tên lửa đạn đạo xuyên lục địa
+                                            chất rắn - Sembo 105786 solid intercontinental ballistic missle 31A</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">900.000đ</span>
+                                            <span class="product-item__price-current">860.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 17</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Sembo Block</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">4%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkm4oepu1rl646"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ cơi Lắp Ráp Máy Bay Quân sự Không Kích Boom
+                                            hạng nặng - Sembo Block 101037 GERMAN JUNKER 88 BOMBER STEEL EMPIRE</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">480.000đ</span>
+                                            <span class="product-item__price-current">299.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 23</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Sembo Block</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">38%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lhplxzo6d8e9a7"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp xe phòng không Radar mặt đất,
+                                            Woma C0811, Xếp hình thông minh, Mô hình quân sự [939 mảnh ghép]</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">590.000đ</span>
+                                            <span class="product-item__price-current">556.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 0</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Woma</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">7%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/800208be55306c52fe1a37b9fdca91d6"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Tàu hỏa quân sự, Kazi 98252 Xếp
+                                            hình thông minh, Militay Railway [Có động cơ điện]</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">899.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 9</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Kazi</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/bafd645bbfb17db73b4d41da63ffb4a4"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Xe Rocket Weishi-2, Panlos 639002
+                                            WS-2 New box rocket Car Xếp hình thông minh [1185 Mảnh ghép]</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">550.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 6</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Kazi</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/96d5934746b443e2776d29d6b007eb19"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Xe Phòng không S-400, SY1677 Air
+                                            defense missle, Xếp hình thông minh, Mô hình quân sự [1133 mảnh ghép]</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">799.000đ</span>
+                                            <span class="product-item__price-current">709.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 16</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">SY</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">11%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="#" class="product__item">
+                                        <img class="product-item__img"
+                                            src="https://down-vn.img.susercontent.com/file/e40ba66606fca5e84a17924881d8ad5c"
+                                            alt="">
+                                        <h5 class="product-item__name">Đồ chơi Lắp ráp Tháp Phao Hạng Nặng Thế Chiến II,
+                                            Panlos 628008 Carronade Kakl, Xếp hình thông minh [4158 Mảnh Ghép]</h5>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-old">1.990.000đ</span>
+                                            <span class="product-item__price-current">1.859.000đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                            <span class="product-item__like product-item__like--liked">
+                                                <i class="product-item__unlike-icon fa-regular fa-heart"></i>
+                                                <i class="product-item__like-icon fa-solid fa-heart"
+                                                    style="color: #e11919;"></i>
+                                            </span>
+                                            <div class="product-item__rating">
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                                <i class="product-item__rating-yellow fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product-item__sold">Đã bán 8</span>
+                                        </div>
+                                        <div class="product-item__origin">
+                                            <span class="product-item__brand">Panlos</span>
+                                            <span class="product-item__origin-name">Trung Quốc</span>
+                                        </div>
+                                        <div class="product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="product-item__sale-percent">7%</span>
+                                            <span class="product-item__sale-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--actived">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">17</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid wide footer__container">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Mail</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chăm Sóc Khách Hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Giới Thiệu Về LegoShop Việt Nam</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Điều Khoản LegoShop</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Chính Hãng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Thanh toán</h3>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-6">
+                        <h3 class="footer__heading">Tải ứng dụng ngay</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/MyQRCode.png" alt="" class="footer__download-img">
+                            <div class="footer__download-app">
+                                <a href="" class="footer__download-link">
+                                    <img src="./assets/img/googleplay.png" alt="Google Play"
+                                        class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-link">
+                                    <img src="./assets/img/apple.png" alt="App Store" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">© 2023 - Bản quyền thuộc về LegoShop</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="modal">
+            <div class="modal__overlay">
+
+            </div>
+            <div class="modal__body"> -->
+        <!--authen form-->
+
+        <!--register form-->
+        <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-from_switch-btn">Đăng nhập</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="divauth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="divauth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+
+                        <div class="auth-form__rules">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ và chính sách bảo mật</a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__control">
+                            <button class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--small btn--with-icon auth-form__social-facebook">
+                            <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                            <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--small btn--with-icon auth-form__social-google">
+                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> -->
+
+        <!--login form-->
+        <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-from_switch-btn">Đăng ký</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="divauth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="divauth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+                        </div>
+
+                        <div class="auth-form__rules">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__control">
+                            <button class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--small btn--with-icon auth-form__social-facebook">
+                            <i class="auth-form__social-icon fa-brands fa-square-facebook"></i>
+                            <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--small btn--with-icon auth-form__social-google">
+                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> -->
+        <!-- </div>
+        </div> -->
+    </div>
+</body>
+
+</html>
