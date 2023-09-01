@@ -9,7 +9,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/grid1.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsvie.css">
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.4.2-web/css/all.min.css">
@@ -39,7 +38,7 @@
 
 
         <input type="checkbox" id="mobile-seach-cb" class="header__search-cb" hidden>
-        
+
         <div class="mobile__search-container">
             <div class="mobile__search">
                 <div class="header__search-input-container">
@@ -81,7 +80,8 @@
 
         <header class="header">
             <div class="grid wide">
-                <nav class="header__navbar hide-on-mobile-tablet">
+                <!--Nav PC-->
+                <nav class="header__navbar hide-on-mobile">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__showQR header__navbar-item--separate">
                             Vào cửa hàng trên ứng dụng
@@ -112,7 +112,7 @@
 
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__showNotify">
-                            <a href="" class="header__navbar-item-link">
+                            <a href="#" class="header__navbar-item-link">
                                 <i class="header__navbar-icon far fa-bell"></i>
                                 Thông Báo
                             </a>
@@ -206,6 +206,48 @@
                     </ul>
                 </nav>
 
+                <!--Nav Mobile-->
+                <input type="checkbox" id="mobile-menu-cb" class="header__menu-cb" hidden>
+
+                <label for="mobile-menu-cb" class="nav-overlay">
+
+                </label>
+
+                <nav class="nav-mobile">
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item">
+                            <a href="" class="nav-mobile__link">
+                                <img src="./assets/img/myPhoto.jpg" alt="" class="nav-mobile__item-img">
+                                <span>Tài khoản</span>
+                            </a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a href="" class="nav-mobile__link">
+                                <i class="nav-mobile__item-icon fa-solid fa-bag-shopping"></i>
+                                <span>Đơn hàng</span>
+                            </a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a href="" class="nav-mobile__link">
+                                <i class="nav-mobile__item-icon fa-solid fa-newspaper"></i>
+                                <span>Bản tin</span>
+                            </a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a href="" class="nav-mobile__link">
+                                <i class="nav-mobile__item-icon fa-solid fa-question"></i>
+                                <span>Trợ giúp</span>
+                            </a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a href="" class="nav-mobile__link">
+                                <i class="nav-mobile__item-icon fa-solid fa-arrow-right-from-bracket"></i>
+                                <span>Đăng xuất</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
                 <!--Header with search-->
                 <div class="header-with-search">
                     <div class="header__mobile">
@@ -218,7 +260,7 @@
                     </div>
                     <div class="header__logo">
                         <a href="" class="header__logo-link">
-                            <img src="./assets/img/logo_shopee.png" alt="Shopee" class="header__logo-img">
+                            <img src="./assets/img/logo.png" alt="Shopee" class="header__logo-img">
                         </a>
                     </div>
                     <div class="header__search">
@@ -480,53 +522,53 @@
                                         <span class="mobile-category__name">Panlos</span>
                                     </a>
                                 </li>
-                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Quanguan</span>
                                     </a>
                                 </li>
-                                <li class="mobile-category__item"> 
+                                <li class="mobile-category__item">
                                     <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Sluban</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">SY</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Sembo Block</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
                                     <a href="" class="mobile-category__link">
-                                         <span class="mobile-category__name">Woma</span>
-                                        </a>
+                                        <span class="mobile-category__name">Woma</span>
+                                    </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Kazi</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">LWCK</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Enlighten</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Gudi</span>
                                     </a>
                                 </li>
                                 <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link"> 
+                                    <a href="" class="mobile-category__link">
                                         <span class="mobile-category__name">Thanh lý hàng tồn kho[giá rẻ]</span>
                                     </a>
                                 </li>
@@ -1018,51 +1060,65 @@
                     <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Thanh toán</h3>
                         <div class="footer-payment__container">
-                            <div class="row">
+                            <div class="row footer-payment">
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/d4bbea4570b93bfd5fc652ca82a262a8" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/d4bbea4570b93bfd5fc652ca82a262a8"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/a0a9062ebe19b45c1ae0506f16af5c16" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/a0a9062ebe19b45c1ae0506f16af5c16"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/38fd98e55806c3b2e4535c4e4a6c4c08" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/38fd98e55806c3b2e4535c4e4a6c4c08"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/bc2a874caeee705449c164be385b796c" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/bc2a874caeee705449c164be385b796c"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/2c46b83d84111ddc32cfd3b5995d9281" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/2c46b83d84111ddc32cfd3b5995d9281"
+                                        alt="" class="footer__payment">
                                 </div>
                             </div>
                             <h3 class="footer__heading">Đơn vị vận chuyển</h3>
-                            <div class="row">
+                            <div class="row footer-transport">
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/vn-50009109-159200e3e365de418aae52b840f24185" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-50009109-159200e3e365de418aae52b840f24185"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/d10b0ec09f0322f9201a4f3daf378ed2" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/d10b0ec09f0322f9201a4f3daf378ed2"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/77bf96a871418fbc21cc63dd39fb5f15" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/77bf96a871418fbc21cc63dd39fb5f15"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/59270fb2f3fbb7cbc92fca3877edde3f" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/59270fb2f3fbb7cbc92fca3877edde3f"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/957f4eec32b963115f952835c779cd2c" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/957f4eec32b963115f952835c779cd2c"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/0d349e22ca8d4337d11c9b134cf9fe63" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/0d349e22ca8d4337d11c9b134cf9fe63"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/3900aefbf52b1c180ba66e5ec91190e5" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/3900aefbf52b1c180ba66e5ec91190e5"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/6e3be504f08f88a15a28a9a447d94d3d" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/6e3be504f08f88a15a28a9a447d94d3d"
+                                        alt="" class="footer__payment">
                                 </div>
                                 <div class="col l-4 m-4 c-6">
-                                    <img src="https://down-vn.img.susercontent.com/file/b8348201b4611fc3315b82765d35fc63" alt="" class="footer__payment">
+                                    <img src="https://down-vn.img.susercontent.com/file/b8348201b4611fc3315b82765d35fc63"
+                                        alt="" class="footer__payment">
                                 </div>
                             </div>
                         </div>
@@ -1116,7 +1172,7 @@
         <!--authen form-->
 
         <!--register form-->
-        <!-- <div class="auth-form">
+        <!--<div class="auth-form">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng ký</h3>
